@@ -1,0 +1,15 @@
+@import "../../styles/colors.scss";
+@import "../../styles/mixins.scss";
+
+.btn {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid $primary;
+    padding: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.withoutBorders {
+    border: none;
+}

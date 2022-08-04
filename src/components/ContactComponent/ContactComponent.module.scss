@@ -1,0 +1,27 @@
+@import "../../styles/colors.scss";
+@import "../../styles/mixins.scss";
+
+.contact {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border-bottom: 1px solid $primary;
+    border-top: 1px solid $primary;
+    margin-bottom: 5px;
+    @include flex_row_space_between_center;
+    .name {
+        font-size: 20px;
+        margin-right: 40px;
+    }
+    .phone {
+        font-size: 20px;
+    }
+    .contactControls {
+        .btn {
+            width: fit-content;
+            height: fit-content;
+            padding: 5px 10px;
+            margin-left: 10px;
+        }
+    }
+}

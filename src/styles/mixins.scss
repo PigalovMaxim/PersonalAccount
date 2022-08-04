@@ -1,0 +1,84 @@
+@import './colors.scss';
+@mixin flex_column_center_center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex_column_top_center {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+@mixin flex_column_top_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+@mixin flex_column_space-around_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+@mixin flex_column_space-between_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+@mixin flex_column_space-between_center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex_row_center_center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex_row_left_center {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+@mixin flex_row_left_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+@mixin flex_row_left_space-around {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: space-around;
+}
+@mixin flex_row_space-between_center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin shadowBlock {
+    box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+}
+
+@mixin ChoosenCard {
+    border: 2px solid $primary;
+}
+
+@mixin circle ($size) {
+    min-width: $size;
+    min-height: $size;
+    max-width: $size;
+    max-height: $size;
+    border-radius: 50%;
+}
